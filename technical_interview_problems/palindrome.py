@@ -7,6 +7,16 @@
 
 
 
+# built in function
+def isPalindrome(string):
+  reverse = string[::-1]
+
+  if string == reverse:
+    return True
+  else:
+    return False
+
+# Another solution without built in python syntax
 def palindrome(string):
   for i in range(0, len(string)//2):
     if string[i] != string[len(string)-i-1]:
@@ -16,3 +26,4 @@ def palindrome(string):
 print(palindrome('cat'))
 print(palindrome('alla'))
 print(palindrome('ot to'))
+
