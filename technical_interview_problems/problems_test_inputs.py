@@ -16,9 +16,11 @@ def is_valid(string):
   
  # Good Normal Input 
 print(is_valid('[{}]'))
+print(is_valid('(['))
 
-# Bad Input 
+# Bad Input Cases 
 print(is_valid(_[]))
+print(is_valid(' '))
 
 
 
@@ -35,8 +37,13 @@ def element_mult_add(x, y):
 
 x = [1, 2, 3]
 y = [10, 15, 20]
+
 # good test case input 
 print(element_mult_add(x, y))
+print(element_mult_add([3,5,6], [2,7,9]))
 
 # bad test case input 
+hashtable = {3:3, 2:6, 1:8}
+hashtable2 = {9:2, 1:7, 13:8}
 print(element_mult_add(+,-))
+print(element_mult_add(hashtable, hashtable2))
